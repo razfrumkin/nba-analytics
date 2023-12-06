@@ -1,0 +1,57 @@
+# Dependency directories
+node_modules/
+venv/
+
+# Production build
+build/
+dist/
+
+# Environment variables
+.env*
+
+# IDE and editor files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.log
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.user
+*.suo
+*.cache/
+*.project
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.h5
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.pyc
+*.pyo
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+dist/
+*.egg-info/
+*.egg/
+
+# Python Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints/
