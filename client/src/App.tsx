@@ -1,20 +1,13 @@
-import { useEffect } from 'react'
-import useTeams from './hooks/useTeams'
-import usePlayers from './hooks/usePlayers'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import BarChartPage from './pages/BarChartPage'
 
 const App = () => {
-    const teams = useTeams()
-    const players = usePlayers()
-
-    useEffect(() => {
-        console.log(players)
-    }, [players])
-
     return (
-        <div>
-            <p>{JSON.stringify(teams)}</p>
-            <p>{JSON.stringify(players)}</p>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/bar-chart' element={<BarChartPage/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 
