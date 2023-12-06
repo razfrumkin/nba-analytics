@@ -1,19 +1,20 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import useTeams from './hooks/useTeams'
+import usePlayers from './hooks/usePlayers'
 
 const App = () => {
-    const [message, setMessage] = useState<string>('Loading...')
+    const teams = useTeams()
+    const players = usePlayers()
 
     useEffect(() => {
-        console.log('Retreiving message...')
-
-        axios.get('http://127.0.0.1:8000/message').then(json => {
-            setMessage(json.data.message)
-        })
-    }, [])
+        console.log(players)
+    }, [players])
 
     return (
-        <h1>{message}</h1>
+        <div>
+            <p>{JSON.stringify(teams)}</p>
+            <p>{JSON.stringify(players)}</p>
+        </div>
     )
 }
 
