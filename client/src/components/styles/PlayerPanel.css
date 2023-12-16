@@ -1,0 +1,4 @@
+.player-panel:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}

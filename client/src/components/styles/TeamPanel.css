@@ -1,0 +1,4 @@
+.team-panel:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
